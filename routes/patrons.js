@@ -1,25 +1,25 @@
 var express = require('express');
 var router = express.Router();
-var Book = require("../models").Book;
+var Patron = require("../models").Patron;
 
 router.get('/', function(req, res, next) {
-  res.render("books/index", {title: "Books" });
+  res.render("patrons/index", {title: "Patrons" });
 });
 
 router.get('/new', function(req, res, next){
-  res.render("books/new", {title: "Books" });
+  res.render("patrons/new", {title: "Patrons" });
 });
 
 router.get('/all', (req, res, next) => {
-  res.render("books/all", {title: "Books" });
+  res.render("patrons/all", {title: "Patrons" });
 });
 
 router.get('/overdue', function(req, res, next){
-  res.render("books/overdue", {title: "Books" });
+  res.render("patrons/overdue", {title: "Patrons" });
 });
 
 router.get('/checked_out', function(req, res, next){
-  res.render("books/checked_out", {title: "Books" });
+  res.render("patrons/checked_out", {title: "Patrons" });
 });
 
 module.exports = router;
