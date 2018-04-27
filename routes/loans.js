@@ -11,15 +11,15 @@ router.get('/new', function(req, res, next){
 });
 
 router.get('/all', (req, res, next) => {
-  res.render("loans/all", {title: "Loans" });
+  res.render("loans/index", {title: "Loans" });
 });
 
 router.get('/overdue', function(req, res, next){
   res.render("loans/overdue", {title: "Loans" });
 });
 
-router.get('/checked_out', function(req, res, next){
-  res.render("loans/checked_out", {title: "Loans" });
+router.get('/checked', function(req, res, next){
+  res.render("loans/checked", {title: "Loans" });
 });
 
 module.exports = router;

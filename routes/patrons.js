@@ -11,15 +11,11 @@ router.get('/new', function(req, res, next){
 });
 
 router.get('/all', (req, res, next) => {
-  res.render("patrons/all", {title: "Patrons" });
+  res.render("patrons/index", {title: "Patrons" });
 });
 
-router.get('/overdue', function(req, res, next){
-  res.render("patrons/overdue", {title: "Patrons" });
-});
-
-router.get('/checked_out', function(req, res, next){
-  res.render("patrons/checked_out", {title: "Patrons" });
+router.get('/detail', function(req, res, next){
+  res.render("patrons/detail", {title: "Patrons" });
 });
 
 module.exports = router;

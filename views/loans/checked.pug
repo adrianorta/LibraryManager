@@ -2,8 +2,9 @@ extends ../layout
 
 block content
   include ../includes/navigation
+  
   body
-    h1 Loans
+    h1 Checked Out Books
     p
       a.button(href='/loans/new') Create New Loan
     p
@@ -63,12 +64,3 @@ block content
           td
           td
             a.button(href='/books/return') Return Book
-        tr
-          td
-            a(href='/books/detail') The Martian
-          td
-            a(href='/patrons/detail') Michael Poley
-          td 2015-12-13
-          td 2015-12-20
-          td 2015-12-17
-          td
