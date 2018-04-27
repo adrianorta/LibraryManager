@@ -11,7 +11,7 @@ router.get('/new', function(req, res, next){
 });
 
 router.get('/all', (req, res, next) => {
-  res.render("books/all", {title: "Books" });
+  res.render("books/index", {title: "Books" });
 });
 
 router.get('/overdue', function(req, res, next){
@@ -19,7 +19,7 @@ router.get('/overdue', function(req, res, next){
 });
 
 router.get('/checked_out', function(req, res, next){
-  res.render("books/checked_out", {title: "Books" });
+  res.render("books/index", {title: "Books" });
 });
 
 module.exports = router;

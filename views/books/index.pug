@@ -1,107 +1,111 @@
 extends ../layout
+
 block content
-  <h1>Books</h1>
-  <p> <a href="/books/new" class="button">Create New Book</a></p>
-  <p>Filters <a href="/books/all">All</a> | <a href="/books/overdue">Overdue</a> | <a href="/books/checked_out">Checked Out</a></p>
-  <table>
-      <thead>
-          <tr>
-              <th>Title</th>
-              <th>Author</th>
-              <th>Genre</th>
-              <th>Year Released</th>
-          </tr>
-      </thead>
-      <tbody>
-          <tr>
-              <td><a href="/books/detail">Harry Potter and the Philoosopher's Stone</a></td>
-              <td>J.K. Rowling</td>
-              <td>Fantasy</td>
-              <td>1997</td>
-          </tr>
-          <tr>
-              <td><a href="/books/detail">Harry Potter and the Chamber of Secrets</a></td>
-              <td>J.K. Rowling</td>
-              <td>Fantasy</td>
-              <td>1998</td>
-          </tr>
-          <tr>
-              <td><a href="/books/detail">Harry Potter and the Prisoner of Azkaban</a></td>
-              <td>J.K. Rowling</td>
-              <td>Fantasy</td>
-              <td>1999</td>
-          </tr>
-          <tr>
-              <td><a href="/books/detail">Harry Potter and the Goblet of Fire</a></td>
-              <td>J.K. Rowling</td>
-              <td>Fantasy</td>
-              <td>2000</td>
-          </tr>
-          <tr>
-              <td><a href="/books/detail">Harry Potter and the Order of the Phoenix</a></td>
-              <td>J.K. Rowling</td>
-              <td>Fantasy</td>
-              <td>2003</td>
-          </tr>
-          <tr>
-              <td><a href="/books/detail">Harry Potter and the Half-Blood Prince</a></td>
-              <td>J.K. Rowling</td>
-              <td>Fantasy</td>
-              <td>2005</td>
-          </tr>
-          <tr>
-              <td><a href="/books/detail">Harry Potter and the Deathly Hallows</a></td>
-              <td>J.K. Rowling</td>
-              <td>Fantasy</td>
-              <td>2007</td>
-          </tr>
-          <tr>
-              <td><a href="/books/detail">A Brief History of Time</a></td>
-              <td>Stephen Hawking</td>
-              <td>Non Fiction</td>
-              <td>1988</td>
-          </tr>
-          <tr>
-              <td><a href="/books/detail">The Universe in a Nutshell</a></td>
-              <td>Stephen Hawking</td>
-              <td>Non Fiction</td>
-              <td>2001</td>
-          </tr>
-          <tr>
-              <td><a href="/books/detail">Frankenstein</a></td>
-              <td>Mary Shelley</td>
-              <td>Horror</td>
-              <td>1818</td>
-          </tr>
-          <tr>
-              <td><a href="/books/detail">The Martian</a></td>
-              <td>Andy Weir</td>
-              <td>Science Fiction</td>
-              <td>2014</td>
-          </tr>
-          <tr>
-              <td><a href="/books/detail">Ready Player One</a></td>
-              <td>Ernest Cline</td>
-              <td>Science Fiction</td>
-              <td>2011</td>
-          </tr>
-          <tr>
-              <td><a href="/books/detail">Armada</a></td>
-              <td>Ernest Cline</td>
-              <td>Science Fiction</td>
-              <td>2015</td>
-          </tr>
-          <tr>
-              <td><a href="/books/detail">Pride and Prejudice</a></td>
-              <td>Jane Austen</td>
-              <td>Classic</td>
-              <td>1813</td>
-          </tr>
-          <tr>
-              <td><a href="/books/detail">Emma</a></td>
-              <td>Jane Austen</td>
-              <td>Classic</td>
-              <td>1815</td>
-          </tr>
-      </tbody>
-  </table>
+  include ../includes/navigation
+  
+  body
+    <h1>Books</h1>
+    <p> <a href="/books/new" class="button">Create New Book</a></p>
+    <p>Filters <a href="/books/all">All</a> | <a href="/books/overdue">Overdue</a> | <a href="/books/checked_out">Checked Out</a></p>
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Genre</th>
+                <th>Year Released</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="/books/detail">Harry Potter and the Philoosopher's Stone</a></td>
+                <td>J.K. Rowling</td>
+                <td>Fantasy</td>
+                <td>1997</td>
+            </tr>
+            <tr>
+                <td><a href="/books/detail">Harry Potter and the Chamber of Secrets</a></td>
+                <td>J.K. Rowling</td>
+                <td>Fantasy</td>
+                <td>1998</td>
+            </tr>
+            <tr>
+                <td><a href="/books/detail">Harry Potter and the Prisoner of Azkaban</a></td>
+                <td>J.K. Rowling</td>
+                <td>Fantasy</td>
+                <td>1999</td>
+            </tr>
+            <tr>
+                <td><a href="/books/detail">Harry Potter and the Goblet of Fire</a></td>
+                <td>J.K. Rowling</td>
+                <td>Fantasy</td>
+                <td>2000</td>
+            </tr>
+            <tr>
+                <td><a href="/books/detail">Harry Potter and the Order of the Phoenix</a></td>
+                <td>J.K. Rowling</td>
+                <td>Fantasy</td>
+                <td>2003</td>
+            </tr>
+            <tr>
+                <td><a href="/books/detail">Harry Potter and the Half-Blood Prince</a></td>
+                <td>J.K. Rowling</td>
+                <td>Fantasy</td>
+                <td>2005</td>
+            </tr>
+            <tr>
+                <td><a href="/books/detail">Harry Potter and the Deathly Hallows</a></td>
+                <td>J.K. Rowling</td>
+                <td>Fantasy</td>
+                <td>2007</td>
+            </tr>
+            <tr>
+                <td><a href="/books/detail">A Brief History of Time</a></td>
+                <td>Stephen Hawking</td>
+                <td>Non Fiction</td>
+                <td>1988</td>
+            </tr>
+            <tr>
+                <td><a href="/books/detail">The Universe in a Nutshell</a></td>
+                <td>Stephen Hawking</td>
+                <td>Non Fiction</td>
+                <td>2001</td>
+            </tr>
+            <tr>
+                <td><a href="/books/detail">Frankenstein</a></td>
+                <td>Mary Shelley</td>
+                <td>Horror</td>
+                <td>1818</td>
+            </tr>
+            <tr>
+                <td><a href="/books/detail">The Martian</a></td>
+                <td>Andy Weir</td>
+                <td>Science Fiction</td>
+                <td>2014</td>
+            </tr>
+            <tr>
+                <td><a href="/books/detail">Ready Player One</a></td>
+                <td>Ernest Cline</td>
+                <td>Science Fiction</td>
+                <td>2011</td>
+            </tr>
+            <tr>
+                <td><a href="/books/detail">Armada</a></td>
+                <td>Ernest Cline</td>
+                <td>Science Fiction</td>
+                <td>2015</td>
+            </tr>
+            <tr>
+                <td><a href="/books/detail">Pride and Prejudice</a></td>
+                <td>Jane Austen</td>
+                <td>Classic</td>
+                <td>1813</td>
+            </tr>
+            <tr>
+                <td><a href="/books/detail">Emma</a></td>
+                <td>Jane Austen</td>
+                <td>Classic</td>
+                <td>1815</td>
+            </tr>
+        </tbody>
+    </table>
