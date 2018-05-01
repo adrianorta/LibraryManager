@@ -2,7 +2,8 @@
 module.exports = (sequelize, DataTypes) => {
   var Book = sequelize.define('Book', {
     id: {type: DataTypes.INTEGER,
-    primaryKey: true},
+      autoIncrement: true,
+      primaryKey: true},
     title: DataTypes.STRING,
     author: DataTypes.STRING,
     genre: DataTypes.STRING,
@@ -10,6 +11,7 @@ module.exports = (sequelize, DataTypes) => {
   }, {});
   Book.associate = function(models) {
     // associations can be defined here
+
   };
   return Book;
 };
